@@ -123,11 +123,17 @@ h6 {
 
 .header .container .nav .header__logo {
   height: 100px;
+  width: 150px;
 }
 
 .header .container .nav .header__logo .logo {
+  position: absolute;
   height: 133px;
   margin-top: 10px;
+}
+
+.header .container .nav .header__logo .logo:hover {
+  height: 140px;
 }
 
 .header .container .nav .nav__list .nav__list-item {

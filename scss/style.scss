@@ -23,9 +23,15 @@
             //Header logo block
             .header__logo {
                 height: 100px;
+                width: 150px;
                 .logo {
+                    position: absolute;
                     height: 133px;
                     margin-top: 10px;
+                }
+                .logo:hover {
+                    height: 140px;
+                   
                 }
             }
 
