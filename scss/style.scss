@@ -5,6 +5,7 @@
     background-color: #070c12;
 }
 
+//Site header
 .header {
     background-color: #070c12;
     width: 100%;
@@ -19,6 +20,7 @@
             align-items: center;
             height: 100px;
 
+            //Header logo block
             .header__logo {
                 height: 100px;
                 .logo {
@@ -26,6 +28,8 @@
                     margin-top: 10px;
                 }
             }
+
+            //Header navigaton menu block
             .nav__list {
                 .nav__list-item {
                     display: inline-block;
@@ -43,17 +47,24 @@
                     }
                 }
             }
+
+            //Hader icons block
             .nav__icons {
                 .nav__icon-instagram {
+                    width: 20px;
                     padding: 5px;
                 }
                 .nav__icon-whatsapp {
+                    width: 20px;
                     padding: 5px;
                 }
             }
+
+            //Header number block
             .nav__number {
                 display: inline;
                 .icon-number {
+                    width: 26px;
                 }
                 .nav__number-text {
                     display: inline-block;

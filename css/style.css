@@ -149,15 +149,21 @@ h6 {
 }
 
 .header .container .nav .nav__icons .nav__icon-instagram {
+  width: 20px;
   padding: 5px;
 }
 
 .header .container .nav .nav__icons .nav__icon-whatsapp {
+  width: 20px;
   padding: 5px;
 }
 
 .header .container .nav .nav__number {
   display: inline;
+}
+
+.header .container .nav .nav__number .icon-number {
+  width: 26px;
 }
 
 .header .container .nav .nav__number .nav__number-text {
