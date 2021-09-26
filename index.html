@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Main page</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+<div class="container"></div>
+
 <body class="body">
     <header class="header">
+
         <div class="container">
-            
-            
+
             <nav class="nav">
-                <a href="" class="header__logo" >
+
+                <a href="" class="header__logo">
                     <img class="logo" src="/img/header/Logo.svg" alt="Pro zakon">
                 </a>
+
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html" class="link-active">Главная</a></li>
-                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html" class="link">Главная</a></li>
-                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html" class="link">Главная</a></li>
-                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html" class="link">Главная</a></li>
+                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html"
+                            class="link-active">Главная</a></li>
+                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html" class="link">Услуги</a></li>
+                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html" class="link">Контакты</a></li>
+                    <li class="nav__list-item"><a href="http://127.0.0.1:5500/index.html" class="link">О нас</a></li>
                 </ul>
+
                 <div class="nav__icons">
-                    <a href="" class="nav__icon-instagram" >
-                        <img class="icon" src="/img/header/instagram.svg" alt="instagram icon">
+                    <a href="" class="nav__icon-instagram">
+                        <svg class="nav__icon-instagram-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.4806 0H5.51916C2.4759 0 0 2.47601 0 5.51928V14.4807C0 17.5241 2.4759 20 5.51916 20H14.4806C17.5241 20 20 17.524 20 14.4807V5.51928C20.0001 2.47601 17.5241 0 14.4806 0ZM18.2256 14.4807C18.2256 16.5456 16.5456 18.2255 14.4807 18.2255H5.51916C3.45435 18.2256 1.7745 16.5456 1.7745 14.4807V5.51928C1.7745 3.45447 3.45435 1.7745 5.51916 1.7745H14.4806C16.5455 1.7745 18.2255 3.45447 18.2255 5.51928V14.4807H18.2256Z" />
+                            <path
+                                d="M9.99969 4.8468C7.15801 4.8468 4.84619 7.15862 4.84619 10.0003C4.84619 12.8419 7.15801 15.1536 9.99969 15.1536C12.8414 15.1536 15.1532 12.8419 15.1532 10.0003C15.1532 7.15862 12.8414 4.8468 9.99969 4.8468ZM9.99969 13.3789C8.13658 13.3789 6.62069 11.8633 6.62069 10.0002C6.62069 8.13696 8.13646 6.62118 9.99969 6.62118C11.8629 6.62118 13.3787 8.13696 13.3787 10.0002C13.3787 11.8633 11.8628 13.3789 9.99969 13.3789Z" />
+                            <path
+                                d="M15.3701 3.34201C15.0283 3.34201 14.6924 3.48042 14.451 3.72294C14.2083 3.96427 14.0688 4.30024 14.0688 4.64331C14.0688 4.98531 14.2084 5.32117 14.451 5.56368C14.6923 5.80501 15.0283 5.94461 15.3701 5.94461C15.7132 5.94461 16.048 5.80501 16.2905 5.56368C16.533 5.32117 16.6714 4.98519 16.6714 4.64331C16.6714 4.30024 16.533 3.96427 16.2905 3.72294C16.0492 3.48042 15.7132 3.34201 15.3701 3.34201Z" />
+                        </svg>
                     </a>
-                    <a href="" class="nav__icon-whatsapp"  >
-                        <img class="icon" src="/img/header/whatsapp.svg" alt="whatsapp icon">
+                    <a href="" class="nav__icon-whatsapp">
+                        <svg class="nav__icon-whatsapp-svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 9.74272C20 15.1231 15.6044 19.4848 10.181 19.4848C8.45991 19.4848 6.84319 19.0446 5.43581 18.2737L0 20L1.77194 14.7716C0.878469 13.3042 0.363909 11.5812 0.363909 9.74207C0.364561 4.36169 4.75886 0 10.1823 0C15.605 0.00130433 20 4.36234 20 9.74272ZM10.1803 1.55346C5.62885 1.55346 1.9265 5.22777 1.9265 9.74468C1.9265 11.5368 2.51084 13.1959 3.49887 14.5459L2.46845 17.587L5.63929 16.5794C6.94362 17.435 8.50426 17.9333 10.1803 17.9333C14.7318 17.9333 18.4355 14.2596 18.4355 9.74272C18.4368 5.22777 14.7324 1.55346 10.1803 1.55346ZM15.1394 11.9868C15.0781 11.8883 14.9177 11.8283 14.6777 11.7084C14.4383 11.5884 13.2533 11.0112 13.0336 10.9329C12.8118 10.8527 12.6514 10.8123 12.491 11.0516C12.3325 11.291 11.8707 11.8284 11.7292 11.9888C11.589 12.1486 11.4488 12.1688 11.2081 12.0507C10.9675 11.9294 10.1914 11.679 9.27186 10.8658C8.55643 10.2318 8.07317 9.4512 7.93361 9.21186C7.79209 8.97316 7.91926 8.84403 8.03861 8.72534C8.14622 8.61773 8.27926 8.44621 8.39991 8.306C8.52056 8.16709 8.56034 8.06861 8.64056 7.90883C8.71947 7.74905 8.67969 7.61014 8.62034 7.48948C8.56034 7.36949 8.07969 6.19559 7.87818 5.71755C7.67796 5.24016 7.47775 5.31907 7.33688 5.31907C7.19666 5.31907 7.03623 5.29951 6.8758 5.29951C6.71536 5.29951 6.4545 5.35755 6.23472 5.5969C6.01494 5.83624 5.39277 6.41341 5.39277 7.58861C5.39277 8.76512 6.25428 9.89924 6.37493 10.0584C6.49623 10.2168 8.04056 12.7075 10.4868 13.6635C12.9344 14.619 12.9344 14.3001 13.3753 14.2596C13.8175 14.2192 14.7996 13.6825 14.9992 13.1255C15.2001 12.566 15.2001 12.0866 15.1394 11.9868Z" />
+                        </svg>
                     </a>
                 </div>
 
-                
-                    
-                    <a href="" class="nav__number"  >
-                        <img class="icon-number" src="/img/header/phone.svg" alt="phone">
-                        <span class="nav__number-text"> 8 938 477 60 00 </span>
-                    </a>
-                
+                <a href="" class="nav__number">
+                    <img class="icon-number" src="/img/header/phone.svg" alt="phone">
+                    <span class="nav__number-text"> 8 938 477 60 00 </span>
+                </a>
+
             </nav>
-        </div>    
+        </div>
     </header>
-    
+    <section>
+        <div class="bgimage">
+        <div class="container">
+            <div class="screen-1">
+                <h1 class="screen-1__title">Профессиональная защита ваших прав</h1>
+                <h2 class="screen-1__subtitle">Надежный представитель в области юридических услуг</h2>
+                <p class="p">Вы можете получить бесплатную консультацию по телефону, или задать вопрос на сайте:</p>
+
+                <button class="button-default1">Получить консультацию</button>
+                <button class="button-default2">Задать вопрос</button>
+
+                <div class="contacts-block">
+                    <p class="contacts-block__description">Мы находимся по адресу:</p>
+                    <p class="contacts-block__adress">Г. Краснодар, ул. Красных партизан, д 347, 5 этаж, офис 1</p>
+                    <p class="contacts-block__number">8 938 477-60-00</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+<footer class="footer">
+
+    <div class="container" >
+        <div class="footer__container">
+            <div class="footer__col1">
+                <div><p class="p text-info"><span class="bold-text">Адрес:</span>  Г. Краснодар, ул. Красных партизан, <br>д 347, 5 этаж, офис 1</p>
+                <p class="p text-info"><span class="bold-text">Телефон:</span> +7 938 477-60-00</p>
+                <p class="p text-info" ><span class="bold-text">Instagram</span>: pro_zakon23</p></div>
+                <a href="" class="link link-2">Политика конфиденциальности</a>
+                
+            </div>
+            <div class="footer__col2">
+                <div class="footer__container-map"><img class="img-size" src="/img/footer/map.jpg" alt=""></div>
+            </div>
+            
+        </div>
+    </div>
+
+</footer>
+
+
 </body>
+
 </html>
