@@ -50,11 +50,11 @@
 }
 
 .h1__screen-2 {
-    padding: 127px 0 0 0;
+    margin: 127px 0 0 0;
 }
 
 .h2__screen-2 {
-    padding: 54px 0 36px 0;
+    margin: 54px 0 36px 0;
 }
 
 .p {
@@ -131,6 +131,12 @@
         background-color: rgba(227, 180, 105, 0.8);
         color: #fff;
     }
+}
+
+.button-outline-brown{
+    border: #E3B469 solid 1px;
+    color: #E3B469;
+    
 }
 
 //Site header
@@ -338,10 +344,10 @@
 
         .features__cols{
             display: flex;
-            
+            margin: 54px -15px 36px -15px;
             flex-direction: row;
             justify-content: space-between;
-            margin: 0 -15px;
+            
             
             .img{
                 display: block;
@@ -349,6 +355,7 @@
                 padding-right: 20px;
             }
             .feature__col-1 {
+                
               display: flex;
               align-items: center;
               flex-basis:33%;
@@ -367,7 +374,14 @@
                 flex-basis:33%;
                 margin: 0 15px;
             }
+           
         }
+         .contacts-block-button{
+            display: flex;
+            justify-content: center;
+            margin: 77px auto;
+                
+            }
     
 
 

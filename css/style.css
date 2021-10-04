@@ -153,11 +153,11 @@ h6 {
 }
 
 .h1__screen-2 {
-  padding: 127px 0 0 0;
+  margin: 127px 0 0 0;
 }
 
 .h2__screen-2 {
-  padding: 54px 0 36px 0;
+  margin: 54px 0 36px 0;
 }
 
 .p {
@@ -239,6 +239,11 @@ h6 {
           box-shadow: 0px 0px 40px rgba(227, 180, 105, 0.25);
   background-color: rgba(227, 180, 105, 0.8);
   color: #fff;
+}
+
+.button-outline-brown {
+  border: #E3B469 solid 1px;
+  color: #E3B469;
 }
 
 .header {
@@ -476,6 +481,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 54px -15px 36px -15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -483,7 +489,6 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 -15px;
 }
 
 .features__cols .img {
@@ -525,4 +530,14 @@ h6 {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
   margin: 0 15px;
+}
+
+.contacts-block-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 77px auto;
 }
