@@ -29,12 +29,12 @@
         max-width: none;
     }
 }
-.h1{
+.h1 {
     font-size: 54px;
     font-weight: 900;
     color: white;
 }
-.h2{
+.h2 {
     font-size: 24px;
     color: white;
 }
@@ -66,13 +66,13 @@
 .p-2 {
     font-size: 14px;
 }
-.p-20{
+.p-20 {
     display: block;
-    width:fit-content;
+    width: fit-content;
     font-size: 20px;
 }
 
-.link {   
+.link {
     color: rgb(175, 175, 175);
     &:hover {
         color: #fff;
@@ -86,16 +86,14 @@
     }
 }
 
-.link-2{
+.link-2 {
     display: block;
     font-size: 14px;
-    width:fit-content;
-    height:30px;
-    
+    width: fit-content;
+    height: 30px;
 }
 
-
-.splitter{
+.splitter {
     height: 1px;
     background-color: #fff;
 }
@@ -125,7 +123,7 @@
     fill: none;
     color: #e3b469;
     margin-right: 20px;
-    
+
     &:hover {
         box-shadow: 0px 0px 40px rgba(227, 180, 105, 0.25);
         background-color: rgba(227, 180, 105, 0.8);
@@ -133,10 +131,9 @@
     }
 }
 
-.button-outline-brown{
-    border: #E3B469 solid 1px;
-    color: #E3B469;
-    
+.button-outline-brown {
+    border: #e3b469 solid 1px;
+    color: #e3b469;
 }
 
 //Site header
@@ -173,7 +170,7 @@
                 padding: 0 38px;
                 font-weight: 400;
                 font-size: 20px;
-                
+
                 .link-active {
                     color: #fff;
                     &:after {
@@ -239,7 +236,6 @@
     background-position: right;
 }
 .screen-1 {
-   
     .p {
         max-width: 600px;
         font-size: 18px;
@@ -291,101 +287,172 @@
         }
     }
 }
-.footer{
+.footer {
     border-top: rgba(255, 255, 255, 0.2) solid 1px;
 }
 .footer__container {
     display: flex;
     height: 596px;
-    
+
     .footer__col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        padding: 45px 30px 45px 0;
+        width: 50%;
+
+        .bold-text {
+            color: #e3b469;
+            font-weight: bold;
+        }
+    }
+
+    .footer__col2 {
+        flex-shrink: 1;
+        position: absolute;
+        right: 0;
+        max-width: 50%;
+        min-width: 50%;
+        max-height: 100%;
+        flex-grow: 1;
+
+        .footer__container-map {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            .img-size {
+                min-width: none;
+                flex: 0 0 100%;
+                max-width: 2000px;
+                max-height: 100%;
+            }
+        }
+    }
+}
+.text-info {
+    padding: 10px 0;
+}
+
+.features__cols {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 54px -15px 36px -15px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .img {
+        display: block;
+
+        padding-right: 20px;
+    }
+    .feature__col-1 {
+        display: flex;
+        
+        align-items: center;
+        flex-basis: 30%;
+        margin: 15px 15px;
+    }
+    .feature__col-2 {
+        display: flex;
+       
+        align-items: center;
+        flex-basis: 30%;
+        margin: 15px 15px;
+    }
+    .feature__col-3 {
+        display: flex;
+        align-items: center;
+        flex-basis: 30%;
+        margin: 15px 15px;
+    }
+}
+.contacts-block-button {
+    display: flex;
+    justify-content: center;
+    margin: 77px auto;
+}
+
+
+.dot{
+    
+    display: inline-block;
+  
+    &:before {
+        
+        content: "";
+        display: inline-block;  
+        vertical-align: middle;
+        height: 22px;
+        width: 22px;
+
+        background-image: url("../img/steps/Ellipse\ 1.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        
+    }
+}
+.block-steps{
+    display: block;
+    border-top: rgba(255, 255, 255, 0.2) solid 1px;
+    height: 840px;
+    .h1{
+        padding: 64px 0; 
+        
+    }
+}
+.steps{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    padding: 45px 30px 45px 0;
-    width: 50%;
+    height: 520px;
 
-    .bold-text {
-        color: #e3b469;
-        font-weight: bold;
-    }
+
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            margin: 20px 10px 0 10px;
+            height: 460px;
+            background-color: white;
+            width: 2px;
+            z-index: 1;
+
+        }
 }
 
-.footer__col2 {
-    flex-shrink: 1;
-    position: absolute;
+
+
+.bgimage-2{
+    position:absolute;
     right: 0;
-    max-width: 50%;
-    min-width: 50%;
-    max-height: 100%;
-    flex-grow: 1;
+    margin: 160px 0;
+    height: 580px;
+    z-index: 0;
     
-
-    .footer__container-map {
+}
+    .align-text{
         display: flex;
-        justify-content:center;
-        overflow: hidden;
-        .img-size{
-            min-width: none;
-            flex: 0 0 100%;
-            max-width: 2000px;
-            max-height: 100%;
+        z-index: 100;
+        .count{
+            width: 160px;
+            padding-left: 30px;
+            padding-right: 20px;
+            color:#E3B469 ;
+            font-weight: 400;
+            font-size: 75px;
+        }
+        .p{
+            font-size: 24px;
         }
 
-}
-}
-}
-.text-info{
-        padding: 10px 0;
-        
+        &:before{
+            content: "";
+            width: 22px;
+            height: 60px;
+            background-image: url("../img/steps/Ellipse\ 1.svg");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            z-index: 20;
+        }
     }
-
-
-        .features__cols{
-            display: flex;
-            margin: 54px -15px 36px -15px;
-            flex-direction: row;
-            justify-content: space-between;
-            
-            
-            .img{
-                display: block;
-               
-                padding-right: 20px;
-            }
-            .feature__col-1 {
-                
-              display: flex;
-              align-items: center;
-              flex-basis:33%;
-              margin: 0 15px;
-         
-            }
-            .feature__col-2 {
-                display: flex;
-                align-items: center;
-                flex-basis:33%;
-                margin: 0 15px;
-            }
-            .feature__col-3 {
-                display: flex;
-                align-items: center;
-                flex-basis:33%;
-                margin: 0 15px;
-            }
-           
-        }
-         .contacts-block-button{
-            display: flex;
-            justify-content: center;
-            margin: 77px auto;
-                
-            }
-    
-
-
-
-    
-   
-    

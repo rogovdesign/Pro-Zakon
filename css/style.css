@@ -242,8 +242,8 @@ h6 {
 }
 
 .button-outline-brown {
-  border: #E3B469 solid 1px;
-  color: #E3B469;
+  border: #e3b469 solid 1px;
+  color: #e3b469;
 }
 
 .header {
@@ -481,6 +481,8 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 54px -15px 36px -15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -503,9 +505,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  margin: 0 15px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 15px 15px;
 }
 
 .features__cols .feature__col-2 {
@@ -515,9 +517,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  margin: 0 15px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 15px 15px;
 }
 
 .features__cols .feature__col-3 {
@@ -527,9 +529,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  margin: 0 15px;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 15px 15px;
 }
 
 .contacts-block-button {
@@ -540,4 +542,92 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 77px auto;
+}
+
+.dot {
+  display: inline-block;
+}
+
+.dot:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 22px;
+  width: 22px;
+  background-image: url("../img/steps/Ellipse 1.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.block-steps {
+  display: block;
+  border-top: rgba(255, 255, 255, 0.2) solid 1px;
+  height: 840px;
+}
+
+.block-steps .h1 {
+  padding: 64px 0;
+}
+
+.steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 520px;
+}
+
+.steps:before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: 20px 10px 0 10px;
+  height: 460px;
+  background-color: white;
+  width: 2px;
+  z-index: 1;
+}
+
+.bgimage-2 {
+  position: absolute;
+  right: 0;
+  margin: 160px 0;
+  height: 580px;
+  z-index: 0;
+}
+
+.align-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+}
+
+.align-text .count {
+  width: 160px;
+  padding-left: 30px;
+  padding-right: 20px;
+  color: #E3B469;
+  font-weight: 400;
+  font-size: 75px;
+}
+
+.align-text .p {
+  font-size: 24px;
+}
+
+.align-text:before {
+  content: "";
+  width: 22px;
+  height: 60px;
+  background-image: url("../img/steps/Ellipse 1.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  z-index: 20;
 }
