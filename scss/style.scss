@@ -11,7 +11,7 @@
 .container {
     max-width: 1110px;
     margin: 0 auto;
-    padding: 0 30px;
+    //padding: 0 30px;
 }
 
 @media (max-width: 1200px) {
@@ -456,3 +456,95 @@
             z-index: 20;
         }
     }
+
+    .contact{
+        display: flex;
+        padding-top: 70px;
+        border-top: rgba(255, 255, 255, 0.2) solid 1px;
+        
+        .contact__col-1{
+            width: 50%;
+        }
+        .contact__col-2{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 0 70px 0;
+            
+            .input{
+                width: 48%;
+                height: 50px;
+                border: #fff solid 1px;
+                border-radius: 10px;
+                background:rgba(255, 255, 255, 0.1);
+                padding: 0 20px;
+                font-size: 18px;
+                color: #fff;
+            }
+            .input1col {
+                display: flex;
+                flex-direction: column;
+                
+               
+                .input-message{
+                    width:100%;
+                    height: 68px;
+                   padding-top: 14px;
+                    margin: 20px 0 0 0;
+                    resize: vertical;
+                    overflow: auto;
+                    
+                }
+            }
+            .input2col {
+                display: flex;
+                
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .policy{
+                display: flex;
+                margin: 20px 0;
+                .custom-checkbox {
+                    position: absolute;
+                    z-index: -1;
+                    opacity: 0;
+                  }
+                  .label{
+                      color: #909090;
+                      font-size: 14px;
+                      align-self: start;
+
+                  }
+                .custom-checkbox+label{
+                    display: inline-flex;
+                    align-items: center;
+                    user-select: none;
+                }
+                .custom-checkbox+label::before{
+                    content: "";
+                    display: inline-block;
+                    align-self: start;
+                    width: 15px;
+                    height: 15px;
+                    flex-shrink: 0;
+                    flex-grow: 0;
+                    border: 1px solid #E3B469;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                    margin-top: 3px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 100% 100%;
+                }
+
+                .custom-checkbox:checked+label::before{
+                    border-color: #E3B469;
+                    background-color: #E3B469;
+                    background-image: url("../img/form/checkbox.svg");
+                }
+            }
+            }
+            
+        }
+    
