@@ -13,6 +13,10 @@
     <meta name="viewport" content="width=device-width">
     <title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="/form.js"></script>
+
+
 </head>
 <div class="container"></div>
 
@@ -221,11 +225,11 @@
                 <h2 class="h2">Оставьте заявку, мы свяжемся с вами</h2>
             </div>
             <div class="contact__col-2">
-                <form action="" method="POST">
+                <form action="" method="POST" id = "callbacks">
                     <div class="input1col">
                         <div class="input2col">
-                            <input class="input" type="text" name="name" placeholder="Ваше имя">
-                            <input class="input" type="tel" name="tel" placeholder="Номер телефона">
+                            <input class="input" type="text" id="user_name" name="name" placeholder="Ваше имя">
+                            <input class="input" type="tel" id="user_email" name="tel" placeholder="Номер телефона">
                         </div>
                 
                         <textarea class="input input-message" name="text" id="ta1"  placeholder="Вопрос"></textarea>
@@ -233,10 +237,13 @@
                             <input type="checkbox" class="custom-checkbox" id="cb1"> <label class="p label" for="cb1">Даю согласие на обработку персональных данных и подтверждаю свое ознакомление с политикой обработки персональных данных компании</label>
                             
                         </div>
-                        <button type="button" class="button_default button-outline-brown">Оставить заявку</button>
+                        <button type="button" id="btn_submit" class="button_default button-outline-brown">Оставить заявку</button>
                     </div>
                     
                 </form>
+
+                <div id = "erconts" style = "display: none">
+                </div>
             </div>
         </div>
     </section>
@@ -255,7 +262,11 @@
                 <a href="" class="link link-2">Политика конфиденциальности</a>
             </div>
             <div class="footer__col2">
-                <div class="footer__container-map"><img class="img-size" src="img/footer/map.jpg" alt=""></div>
+                <div class="footer__container-map"> <!-- <img class="img-size" src="img/footer/map.jpg" alt=""> -->
+                
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06df62f44d798fb01d09eb469184a26dafe7f083f4fe127a14419144f3d0d3a1&amp;width=100%25&amp;height=596&amp;lang=ru_RU&amp;scroll=true"></script>
+                
+                </div>
             </div>
         </div>
     </div>

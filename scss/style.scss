@@ -75,8 +75,10 @@
 .link {
     color: rgb(175, 175, 175);
     &:hover {
+        transition-duration: .4s;
         color: #fff;
         &:after {
+            
             content: "";
             display: block;
             height: 1px;
@@ -125,6 +127,7 @@
     margin-right: 20px;
 
     &:hover {
+        transition-duration: .4s;
         box-shadow: 0px 0px 40px rgba(227, 180, 105, 0.25);
         background-color: rgba(227, 180, 105, 0.8);
         color: #fff;
@@ -134,6 +137,10 @@
 .button-outline-brown {
     border: #e3b469 solid 1px;
     color: #e3b469;
+    &:hover {
+        transition-duration: .4s;
+        background-color: rgba(227, 180, 105, 0.2);
+    }
 }
 
 //Site header
@@ -253,6 +260,7 @@
         fill: none;
         color: white;
         &:hover {
+            transition-duration: .4s;
             background-color: rgba(255, 255, 255, 0.3);
         }
     }
@@ -321,12 +329,7 @@
             display: flex;
             justify-content: center;
             overflow: hidden;
-            .img-size {
-                min-width: none;
-                flex: 0 0 100%;
-                max-width: 2000px;
-                max-height: 100%;
-            }
+            
         }
     }
 }
